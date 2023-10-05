@@ -1,0 +1,39 @@
+body {
+	font-family: copperplate, fantasy;
+	letter-spacing: 2px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #96D4D4;
+  color: white;
+}
+h2 {
+	border-bottom-style: solid;
+	border-color: #96D4D4;
+	letter-spacing: 3px;
+	}
+p{
+	width: 75%;
+	}
+th {
+	padding: 5px;
+	border: 2px solid white;
+	background-color: #96D4D4;
+}
+td {
+	padding: 5px;
+	border: 2px solid white;
+	background-color: #f1f1f1;
+}
