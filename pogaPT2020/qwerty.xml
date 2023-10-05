@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<personList>
+    <list>
+        <gender>woman</gender>
+        <name>admin</name>
+        <password>12345</password>
+        <username>admin</username>
+    </list>
+</personList>

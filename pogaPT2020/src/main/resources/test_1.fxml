@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="475.0" prefWidth="713.0" style="-fx-background-color: #ffedc2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller1">
+   <children>
+      <PasswordField fx:id="password" layoutX="136.0" layoutY="227.0" prefHeight="38.0" prefWidth="312.0" promptText="password" style="-fx-border-color: #6fc225;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="136.0" layoutY="43.0" prefHeight="74.0" prefWidth="432.0" text="Catalugue of games">
+         <font>
+            <Font name="Comic Sans MS" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="poga" layoutX="136.0" layoutY="306.0" maxHeight="51.0" mnemonicParsing="false" onAction="#click" prefHeight="46.0" prefWidth="97.0" style="-fx-background-color: #89e046; -fx-border-color: #6fc225; -fx-border-width: 2;" text="Log In" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="username" layoutX="136.0" layoutY="162.0" prefHeight="54.0" prefWidth="312.0" promptText="username" style="-fx-border-color: #6fc225;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="registerPoga" layoutX="568.0" layoutY="352.0" mnemonicParsing="false" onAction="#click2" prefHeight="38.0" prefWidth="86.0" style="-fx-background-color: #89e046; -fx-border-color: #6fc225; -fx-border-width: 2;" text="Register">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

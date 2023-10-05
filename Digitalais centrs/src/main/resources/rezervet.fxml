@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3f0051;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerRezervacija">
+   <children>
+      <TextField fx:id="surname" layoutX="193.0" layoutY="98.0" onKeyPressed="#funkcijaName" prefHeight="38.0" prefWidth="172.0" promptText="Uzvards" style="-fx-background-color: white;">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <Button fx:id="button2" layoutX="250.0" layoutY="324.0" mnemonicParsing="false" onAction="#save" prefHeight="44.0" prefWidth="98.0" style="-fx-background-color: #fff18a; -fx-border-color: #e1d167; -fx-border-width: 2px;" text="Apstiprināt" textFill="#3f0051">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="15.0" offsetX="2.0" offsetY="1.0" radius="7.0" spread="0.47" width="15.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="name" layoutX="193.0" layoutY="35.0" onKeyPressed="#funkcijaName" prefHeight="38.0" prefWidth="172.0" promptText="Vards" style="-fx-background-color: white;">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <DatePicker fx:id="date" layoutX="193.0" layoutY="163.0" onKeyPressed="#funkcijaDatums" prefHeight="38.0" prefWidth="172.0" promptText="Dzimsanas datums">
+         <effect>
+            <InnerShadow />
+         </effect></DatePicker>
+      <TextField fx:id="datNum" layoutX="255.0" layoutY="262.0" onKeyPressed="#funkcijaDators" prefHeight="38.0" prefWidth="66.0" promptText="No." style="-fx-background-color: white;">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="#fff18a" layoutX="224.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Izvēlies datoru(1-12)">
+         <font>
+            <Font name="Candara Bold" size="18.0" />
+         </font></Text>
+      <Circle fx:id="nameC" fill="WHITE" layoutX="389.0" layoutY="54.0" radius="18.0" stroke="WHITE" strokeType="INSIDE">
+         <effect>
+            <Lighting diffuseConstant="1.15" light="$null" specularConstant="2.0" specularExponent="21.5" surfaceScale="3.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Circle>
+      <Circle fx:id="datC" fill="WHITE" layoutX="347.0" layoutY="281.0" radius="18.0" stroke="WHITE" strokeType="INSIDE">
+         <effect>
+            <Lighting diffuseConstant="1.15" specularConstant="2.0" specularExponent="21.5" surfaceScale="3.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Circle>
+      <Circle fx:id="dateC" fill="WHITE" layoutX="389.0" layoutY="182.0" radius="18.0" stroke="WHITE" strokeType="INSIDE">
+         <effect>
+            <Lighting diffuseConstant="1.15" specularConstant="2.0" specularExponent="21.5" surfaceScale="3.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Circle>
+      <Circle fx:id="surnameC" fill="WHITE" layoutX="389.0" layoutY="117.0" radius="18.0" stroke="WHITE" strokeType="INSIDE">
+         <effect>
+            <Lighting diffuseConstant="1.15" specularConstant="2.0" specularExponent="21.5" surfaceScale="3.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Circle>
+      <Button fx:id="button3" layoutX="134.0" layoutY="324.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="44.0" prefWidth="98.0" style="-fx-background-color: #fff18a; -fx-border-color: #e1d167; -fx-border-width: 2px;" text="Datoru shēma" textFill="#3f0051">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="15.0" offsetX="2.0" offsetY="1.0" radius="7.0" spread="0.47" width="15.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="button4" layoutX="367.0" layoutY="324.0" mnemonicParsing="false" onAction="#delete" prefHeight="44.0" prefWidth="98.0" style="-fx-background-color: #fff18a; -fx-border-color: #e1d167; -fx-border-width: 2px;" text="Izdzēst datoru" textFill="#3f0051">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="15.0" offsetX="2.0" offsetY="1.0" radius="7.0" spread="0.47" width="15.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>
