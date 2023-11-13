@@ -1,0 +1,6 @@
+.button:hover{
+    -fx-background-color: #90EE90;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+
+}
